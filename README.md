@@ -1,4 +1,78 @@
-# Summary: Prefix Sum, Frequency Array, and Partial Sum
+# C++ String Functions
+
+## 1. Constructors
+```cpp
+std::string str1; // Empty string
+std::string str2("Hello"); // String from C-string
+std::string str3(5, 'A'); // "AAAAA"
+std::cout << str2 << " " << str3 << std::endl; // Output: Hello AAAAA
+```
+
+## 2. Capacity
+```cpp
+std::string str = "Hello, World!";
+std::cout << "Size: " << str.size() << std::endl; // Output: 13
+std::cout << "Capacity: " << str.capacity() << std::endl;
+str.clear();
+std::cout << "Is empty: " << str.empty() << std::endl; // Output: 1 (true)
+```
+
+## 3. Element Access
+```cpp
+std::string str = "Hello";
+std::cout << str[1] << std::endl; // Output: e
+std::cout << str.at(2) << std::endl; // Output: l
+std::cout << str.front() << std::endl; // Output: H
+std::cout << str.back() << std::endl; // Output: o
+```
+
+## 4. Modifiers
+```cpp
+std::string str = "Hello";
+str += " World";
+std::cout << str << std::endl; // Output: Hello World
+str.append("!!!");
+std::cout << str << std::endl; // Output: Hello World!!!
+str.insert(5, ",");
+std::cout << str << std::endl; // Output: Hello, World!!!
+str.erase(5, 1);
+std::cout << str << std::endl; // Output: Hello World!!!
+str.replace(6, 5, "C++");
+std::cout << str << std::endl; // Output: Hello C++!!!
+```
+
+## 5. String Operations
+```cpp
+std::string str = "Hello, World!";
+std::cout << str.find("World") << std::endl; // Output: 7
+std::cout << str.substr(7, 5) << std::endl; // Output: World
+```
+
+## 6. Comparison
+```cpp
+std::string str1 = "Hello";
+std::string str2 = "World";
+std::cout << (str1 == str2) << std::endl; // Output: 0 (false)
+std::cout << str1.compare(str2) << std::endl; // Output: negative value
+```
+
+## 7. Input/Output
+```cpp
+std::string str;
+std::cout << "Enter a string: ";
+std::getline(std::cin, str);
+std::cout << "You entered: " << str << std::endl;
+```
+
+## 8. Conversion
+```cpp
+std::string str = "1234";
+int num = std::stoi(str);
+std::cout << num + 1 << std::endl; // Output: 1235
+std::cout << std::to_string(num) + " apples" << std::endl; // Output: 1234 apples
+```
+
+
 
 ## 1. Prefix Sum
 ### Definition:
