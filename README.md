@@ -2,75 +2,74 @@
 
 ## 1. Constructors
 ```cpp
-std::string str1; // Empty string
-std::string str2("Hello"); // String from C-string
-std::string str3(5, 'A'); // "AAAAA"
-std::cout << str2 << " " << str3 << std::endl; // Output: Hello AAAAA
+string str1; // Empty string
+string str2("Hello"); // String from C-string
+string str3(5, 'A'); // "AAAAA"
+cout << str2 << " " << str3 << endl; // Output: Hello AAAAA
 ```
 
 ## 2. Capacity
 ```cpp
-std::string str = "Hello, World!";
-std::cout << "Size: " << str.size() << std::endl; // Output: 13
-std::cout << "Capacity: " << str.capacity() << std::endl;
+string str = "Hello, World!";
+cout << "Size: " << str.size() << endl; // Output: 13
+cout << "Capacity: " << str.capacity() << endl;
 str.clear();
-std::cout << "Is empty: " << str.empty() << std::endl; // Output: 1 (true)
+cout << "Is empty: " << str.empty() << endl; // Output: 1 (true)
 ```
 
 ## 3. Element Access
 ```cpp
-std::string str = "Hello";
-std::cout << str[1] << std::endl; // Output: e
-std::cout << str.at(2) << std::endl; // Output: l
-std::cout << str.front() << std::endl; // Output: H
-std::cout << str.back() << std::endl; // Output: o
+string str = "Hello";
+cout << str[1] << endl; // Output: e
+cout << str.at(2) << endl; // Output: l
+cout << str.front() << endl; // Output: H
+cout << str.back() << endl; // Output: o
 ```
 
 ## 4. Modifiers
 ```cpp
-std::string str = "Hello";
+string str = "Hello";
 str += " World";
-std::cout << str << std::endl; // Output: Hello World
+cout << str << endl; // Output: Hello World
 str.append("!!!");
-std::cout << str << std::endl; // Output: Hello World!!!
+cout << str << endl; // Output: Hello World!!!
 str.insert(5, ",");
-std::cout << str << std::endl; // Output: Hello, World!!!
+cout << str << endl; // Output: Hello, World!!!
 str.erase(5, 1);
-std::cout << str << std::endl; // Output: Hello World!!!
+cout << str << endl; // Output: Hello World!!!
 str.replace(6, 5, "C++");
-std::cout << str << std::endl; // Output: Hello C++!!!
+cout << str << endl; // Output: Hello C++!!!
 ```
 
 ## 5. String Operations
 ```cpp
-std::string str = "Hello, World!";
-std::cout << str.find("World") << std::endl; // Output: 7
-std::cout << str.substr(7, 5) << std::endl; // Output: World
+string str = "Hello, World!";
+cout << str.find("World") << endl; // Output: 7
+cout << str.substr(7, 5) << endl; // Output: World
 ```
 
 ## 6. Comparison
 ```cpp
-std::string str1 = "Hello";
-std::string str2 = "World";
-std::cout << (str1 == str2) << std::endl; // Output: 0 (false)
-std::cout << str1.compare(str2) << std::endl; // Output: negative value
+string str1 = "Hello";
+string str2 = "World";
+cout << (str1 == str2) << endl; // Output: 0 (false)
+cout << str1.compare(str2) << endl; // Output: negative value
 ```
 
 ## 7. Input/Output
 ```cpp
-std::string str;
-std::cout << "Enter a string: ";
-std::getline(std::cin, str);
-std::cout << "You entered: " << str << std::endl;
+string str;
+cout << "Enter a string: ";
+getline(cin, str);
+cout << "You entered: " << str << endl;
 ```
 
 ## 8. Conversion
 ```cpp
-std::string str = "1234";
-int num = std::stoi(str);
-std::cout << num + 1 << std::endl; // Output: 1235
-std::cout << std::to_string(num) + " apples" << std::endl; // Output: 1234 apples
-```
+string str = "1234";
+int num = stoi(str);
+cout << num + 1 << endl; // Output: 1235
+cout << to_string(num) + " apples" << endl; // Output: 1234 apples
 
 
 
