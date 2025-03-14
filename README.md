@@ -71,7 +71,7 @@ int num = stoi(str);
 cout << num + 1 << endl; // Output: 1235
 cout << to_string(num) + " apples" << endl; // Output: 1234 apples
 
-
+```
 
 ## 1. Prefix Sum
 ### Definition:
@@ -79,7 +79,7 @@ Prefix Sum is an array where each element at index `i` stores the sum of all ele
 
 ### Formula:
 For an array `arr[]`, the prefix sum array `prefix[]` is:
-```
+
 prefix[i] = prefix[i-1] + arr[i]  (for i > 0)
 prefix[0] = arr[0]
 ```
